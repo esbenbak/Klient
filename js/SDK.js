@@ -33,8 +33,7 @@ var SDK = {
            },
            error: function(res) { alert('Failed!'); },
        });
-         /*
-         $.ajax({
+         /*$.ajax({
             type: 'GET',
             url: SDK.serverURL + "/getCourses/" + "6",
             contentType: "application/json; charset=utf-8",
@@ -43,7 +42,8 @@ var SDK = {
               console.log(res)
             },
             error: function(res) { alert('Failed!'); },
-        });*/
+        });
+         */
 
     },
 
