@@ -11,12 +11,11 @@ $(document).ready(function () {
 
         decrypted.forEach(function (decrypted) {
 
-
           lectureTableBody.append(
               "<tr>" +
               "<td>" + decrypted.code + "</td>" +
               "<td>" + /*course.reviewAverage*/ + "</td>" +
-              "<td> <button class='btn btn-default type='lektion'>Klik for kommentarer</button></td>" +
+              "<td> <button class='btn btn-default toComment' data-lectureCode=" + decrypted.displaytext + ">Klik for kommentarer</button></td>" +
               "</tr>"
           );
 

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var $studentTableBody = $("#studentTableBody");
+  var studentTableBody = $("#studentTableBody");
 
     $.ajax({
         type: "GET",
@@ -15,12 +15,12 @@ $(document).ready(function () {
                 "<tr>" +
                 "<td>" + decrypted.code + "</td>" +
                 "<td>" + /*course.reviewAverage*/ + "</td>" +
-                "<td> <button class='btn btn-default type='lektion'></button></td>" +
+                "<td> <button class='btn btn-default toLecture' data-lectureCode=" + decrypted.displaytext + ">Klik for lektioner</button> </td>" +
                 "</tr>"
 
             );
 
-          })
+          });
 
         },
 
@@ -28,6 +28,6 @@ $(document).ready(function () {
           alert('failed!');
         }
 
-    });
+    })
 
-});
+})
