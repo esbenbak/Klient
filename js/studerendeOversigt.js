@@ -13,10 +13,11 @@ $(document).ready(function () {
 
             studentTableBody.append(
                 "<tr>" +
-                "<td>" + decrypted.code + "</td>" + 
+                "<td>" + decrypted.code + "</td>" +
                 "<td>" + /*course.reviewAverage*/ + "</td>" +
-                "<td>" + /*button*/ + "</td>" +
+                "<td> <button class='btn btn-default type='lektion'></button></td>" +
                 "</tr>"
+
             );
 
           })
