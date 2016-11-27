@@ -15,7 +15,7 @@ $(document).ready(function () {
               "<tr>" +
               "<td>" + decrypted.code + "</td>" +
               "<td>" + /*course.reviewAverage*/ + "</td>" +
-              "<td> <button class='btn btn-default toComment' data-lectureCode=" + decrypted.displaytext + ">Klik for kommentarer</button></td>" +
+              "<td class='btn-row'> <button class='btn btn-default toComment' data-lecture=" + decrypted.displaytext + ">Klik for at se kommentarer</button></td>" +
               "</tr>"
           );
 
@@ -28,4 +28,10 @@ $(document).ready(function () {
       }
 
   });
+
 })
+
+$('#lectureTableBody').on('click','.toComment',function(e){
+  var lectureCode = $(this).data("lecture");
+  window.location.href = "underviserLectureView.html#" + lectureCode;
+});
