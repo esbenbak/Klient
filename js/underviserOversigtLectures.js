@@ -31,6 +31,6 @@ $(document).ready(function () {
 })
 
 $("#lecturerLectureTableBody").on('click','.toReview',function(e){
-  var lectureCode = $(this).data("id");
-  alert("hasd")
+  var id = $(this).data("id");
+  window.location.href = "underviserReview.html#" + id;
 });
