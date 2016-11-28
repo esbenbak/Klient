@@ -14,7 +14,6 @@ $(document).ready(function () {
           lectureTableBody.append(
               "<tr>" +
               "<td>" + decrypted.code + "</td>" +
-              "<td>" + /*course.reviewAverage*/ + "</td>" +
               "<td class='btn-row'> <button class='btn btn-default toComment' data-lecture=" + decrypted.displaytext + ">Klik for at se kommentarer</button></td>" +
               "</tr>"
           );
