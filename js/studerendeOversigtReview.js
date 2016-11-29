@@ -6,7 +6,7 @@ $(document).ready(function () {
       dataType: "json",
       success: function(reviews){
         var decrypted = $.parseJSON(SDK.Decrypt(reviews))
-        var table = $("#commentTableBody");
+        var table = $("#reviewTableBody");
         console.log(decrypted);
 
         decrypted.forEach(function (decrypted) {
@@ -14,7 +14,6 @@ $(document).ready(function () {
               "<tr>" +
               "<td>" + decrypted.comment + "</td>" +
               "<td>" + decrypted.rating + "</td>" +
-              "<td class='btn-row'> <button class='btn btn-default toReview' data-id=" + decrypted.id+ ">Slet</button></td>" +
               "</tr>"
           );
 

@@ -27,10 +27,9 @@ var SDK = {
              SDK.Storage.persist("userId", userId);
                if (user.type == "student") {
                  window.location.href = "studerendeView.html";
-               } else if (user.type == "teacher") {
+               } else if(user.type == "teacher") {
                  window.location.href = "underviserView.html";
                }
-
            },
            error: function(res) { alert('Failed!'); },
        });
