@@ -30,6 +30,9 @@ var SDK = {
                } else if(user.type == "teacher") {
                  window.location.href = "underviserView.html";
                }
+               else if(user.type == "admin") {
+                 window.location.href = "adminView.html";
+               }
            },
            error: function(res) { alert('Failed!'); },
        });

@@ -14,6 +14,7 @@ $(document).ready(function () {
               "<tr>" +
               "<td>" + decrypted.comment + "</td>" +
               "<td>" + decrypted.rating + "</td>" +
+              //"<td class='btn-row'> <button class='btn btn-default toReview' data-id=" + decrypted.id+ ">Slet</button></td>" +
               "</tr>"
           );
 
