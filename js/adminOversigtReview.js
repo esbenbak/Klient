@@ -14,6 +14,7 @@ $(document).ready(function () {
               "<tr>" +
               "<td>" + decrypted.comment + "</td>" +
               "<td>" + decrypted.rating + "</td>" +
+              "<td class='btn-row'> <button class='btn btn-default toDelete' data-delete=>Slet upassende kommentar</button> </td>" +
               "</tr>"
           );
 
