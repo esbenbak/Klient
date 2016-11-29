@@ -31,7 +31,8 @@ $(document).ready(function () {
     })
     //(".toLecture").on("click", function(e){
 })
-$('#studentLectureTableBody').on('click','.toLecture',function(e){
+$('#studentTableBody').on('click','.toLecture',function(e){
   var lectureCode = $(this).data("lecture");
-  window.location.href = "studerendeLectureView.html" + lectureCode;
+  window.location.href = "studerendeLectureView.html#" + lectureCode;
+
 });

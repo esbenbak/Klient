@@ -15,7 +15,6 @@ $(document).ready(function () {
           table.append(
               "<tr>" +
               "<td>" + decrypted.startDate + "</td>" +
-              "<td>" +  + "</td>" +
               "<td class='btn-row'> <button class='btn btn-default toReview' data-id=" + decrypted.id+ ">Klik for at se kommentarer</button></td>" +
               "</tr>"
           );

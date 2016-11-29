@@ -15,8 +15,7 @@ $(document).ready(function () {
           table.append(
               "<tr>" +
               "<td>" + decrypted.startDate + "</td>" +
-              "<td>" +  + "</td>" +
-              "<td class='btn-row'> <button class='btn btn-default toReview' data-id=" + decrypted.id+ ">Klik for at se kommentarer</button></td>" +
+              "<td class='btn-row'> <button class='btn btn-default toReview' data-id=" + decrypted.id+ ">Klik for at tilføje kommentar</button></td>" +
               "</tr>"
           );
 
@@ -27,5 +26,11 @@ $(document).ready(function () {
         console.log(err);
       }
   })
+})
+
+$("#studentLectureTableBody").on('click','.toReview',function(e){
+  var id = $(this).data("id");
+  window.location.href = "studerendeReview.html#" + id;
+
 
 });
