@@ -25,6 +25,7 @@ var SDK = {
              var userId = user.id
              console.log(user.type);
              SDK.Storage.persist("userId", userId);
+             SDK.Storage.persist("userType", user.type);
                if (user.type == "student") {
                  window.location.href = "studerendeView.html";
                } else if(user.type == "teacher") {
