@@ -14,7 +14,6 @@ $(document).ready(function () {
             studentTableBody.append(
                 "<tr>" +
                 "<td>" + decrypted.code + "</td>" +
-                "<td>" + /*course.reviewAverage*/ + "</td>" +
                 "<td class='btn-row'> <button class='btn btn-default toLecture' data-lecture=" + decrypted.displaytext + ">Klik for lektioner</button> </td>" +
                 "</tr>"
 
